@@ -6,20 +6,78 @@ int main()
     int t ;
     cin >> t ;
 
-    string s ;
-
-
     while (t--)
     {
-        cin >> s ;
+        // string s ;
+        // cin >> s ;
 
-        if (s[0]== s[1]== s[2] == s[3])
-        {
+        // set<char> bulb ;
+        
+        // for (int i = 0; i < s.size(); i++)
+        // {
+        //     bulb.insert(s[i]);
+        // }
+
+        // // for (char c : s)
+        // // {
+        // //     freq[c]++;
+        // // }
+
+        // //cout << bulb.size() << endl ;
+
+        // int ans = bulb.size();
+
+        
+        // if (ans == 1)
+        // {
+        //     cout << -1 << endl ;
+        // }
+        // else if (ans == 2 )
+        // {
+        //     cout << 6 << endl ;
             
+        // }
+        // else
+        // {
+        //     cout << 4 << endl ;
+        // }
+
+        string s;
+        cin >> s;
+
+        vector<int> a(10, 0); 
+
+        for (char c : s) 
+        {
+            if (isdigit(c)) 
+            { 
+               ++a[c - '0'];
+            }
+       }
+
+        int sum = *max_element(a.begin(), a.end());
+
+        if (sum == 4)
+        {
+            cout << -1 << endl ;
         }
+        else if (sum == 3)
+        {
+            cout << 6 << endl ;
+        }
+        else
+            {
+                cout << 4 << endl ;
+            }
+    
         
 
+        
+        
+        
+        
     }
+    
     
     
     

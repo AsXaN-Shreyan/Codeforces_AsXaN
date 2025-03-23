@@ -45,7 +45,8 @@ int main()
         }
 
         
-        if (!result) {
+        if (!result) 
+        {
             cout << 0 << endl; 
         }
     }

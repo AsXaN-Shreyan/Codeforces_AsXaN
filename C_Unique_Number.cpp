@@ -11,24 +11,53 @@ int main()
         int n;
         cin >> n;
 
-        bool found = false;
+    //     bool found = false;
 
-        for (int i = 0; i <= 123456789; i++)
+    //     for (int i = 0; i <= 123456789; i++)
+    //     {
+    //         long long int count = i / 10 + i % 10;
+
+    //         if (count == n)
+    //         {
+    //             cout << i << endl;
+    //             found = true;
+    //             break;
+    //         }
+    //     }
+
+    //     if (!found) 
+    //     {
+    //         cout << -1 << endl;
+    //     }
+        if ( n > 45)
         {
-            long long int count = i / 10 + i % 10;
+           cout << -1 << endl ;
+        }
 
-            if (count == n)
+        else
+        {
+            if (n < 10)
             {
-                cout << i << endl;
-                found = true;
-                break;
+                cout << n ;
             }
-        }
+            else
+            {
+                cout << 9 ;
 
-        if (!found) 
-        {
-            cout << -1 << endl;
+                if (n )
+                {
+                    /* code */
+                }
+                
+                
+            }
+            
+            
         }
+        
+         
+    
+
     }
 
     return 0;
